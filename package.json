@@ -4,12 +4,14 @@
   "description": "booking application to book rooms for conferences and other similar events at the venue",
   "main": "server/server.js",
   "scripts": {
-    "build": "cd client && npm run build",
-    "client": "cd client && npm start",
+    "build-client": "cd client && npm run build",
     "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\" ",
     "install": "cd server && npm i && cd ../client && npm i",
-    "seed": "cd server && npm run seed",
-    "start": "npm run build && cd server && node server.js",
+    "install-client": "cd client && npm install",
+    "install-server": "cd server && npm install",
+    "seed-db": "cd server && npm run seed",
+    "start-client": "cd client && npm run start",
+    "start-server": "cd server && node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
