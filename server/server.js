@@ -17,15 +17,6 @@ if (process.env.NODE_ENV === "production") {
 }
 
 app.get("/", (req, res) => {
-  res.send(
-    `<div>
-      <h1>Booking System App</h1>
-      <p>Build site will be served from this address</p>
-    </div>`
-  );
-});
-
-app.get("/api", (req, res) => {
   res.json({ message: "API server running successfully!" });
 });
 

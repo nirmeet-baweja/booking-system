@@ -4,10 +4,10 @@
   "description": "server side application for a booking system",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-    ,
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "server": "node server.js --ignore client",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "nirmeet-baweja",
   "license": "ISC",
